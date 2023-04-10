@@ -84,7 +84,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (length.str1 === length.str2){
+  if (str1.length== str2.length){
     return true
   }
   else
@@ -128,7 +128,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num / 2){
+  if (num % 2 == 0){
     return true
   }
   else {
@@ -141,6 +141,12 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num % 3 ){
+    return true
+  }
+  else{
+    return false
+  }
   
 }
 
@@ -148,25 +154,31 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
+  elevarAlCuadrado = Math.pow(num, 2)
+  return elevarAlCuadrado
   
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
+  elevarAlCubo = Math.pow(num,3)
+  return elevarAlCubo
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
+  elevar = Math.pow(num,exponent)
+  return elevar
   
-}
+}7
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  redondearNumero = Math.ceil(num)
+  return redondearNumero
 }
 
 function redondearHaciaArriba(num) {
